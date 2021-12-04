@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Manipur Cuisines</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="Sangai Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"> </i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="recipes.html">RECIPES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        <div class="text-box">
+            <h1>Tasty Manipuri Foods</h1>
+            <p>Every Foods Of Manipur Can Be Found Here</p>
+            <a href="recipes.html" class="front-btn">Press This</a>
+        </div>
+    </section>
+    
+    <!--JavaScript For Menu Toggle-->
+    <script>
+        var navLink = document.getElementById("navLinks");
+        function hideMenu()
+        {
+            navLink.style.right = "-200px";
+        }
+        function showMenu()
+        {
+            navLink.style.right = "0px";
+        }
+    </script>
+</body>
+</html>

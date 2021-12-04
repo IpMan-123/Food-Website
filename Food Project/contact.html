@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Manipur Cuisines</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="Sangai Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"> </i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="recipes.html">RECIPES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!--Contact Us Content-->
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1078401.9714341306!2d93.59790789407819!3d24.86902548245154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3749265bf16390db%3A0x8cc1691ae0a829af!2sManipur!5e0!3m2!1sen!2sin!4v1638589383980!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Imphal, Manipur-795001</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 1234567890</h5>
+                        <p>Monday - Friday (10AM - 6PM)</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>nishikantangangom@gmail.com</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message"></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--JavaScript For Menu Toggle-->
+    <script>
+        var navLink = document.getElementById("navLinks");
+        function hideMenu()
+        {
+            navLink.style.right = "-200px";
+        }
+        function showMenu()
+        {
+            navLink.style.right = "0px";
+        }
+    </script>
+</body>
+</html>

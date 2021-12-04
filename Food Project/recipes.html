@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Manipur Cuisines</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"> </i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="recipes.html">RECIPES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        <h1>FOODS AND RECIPES</h1>
+    </section>
+
+    <!--Recipes Content-->
+    <section class="foods">
+        <h1>OUR CULTURAL FOODS</h1>
+        <p>Here are all the original foods and recipes from Manipur</p>
+        <div class="row">
+            <div class="foods-col">
+                <img src="img/Mustard.png">
+                <div class="layer">
+                    <h3>Hangam Thongba(Mustard Curry)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Chives.jpg">
+                <div class="layer">
+                    <h3>Maroi Thongba(Chives Curry)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Utti.jpg">
+                <div class="layer">
+                    <h3>Utti Thongba</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="foods-col">
+                <img src="img/Fish.jpg">
+                <div class="layer">
+                    <h3>Nga Thongba(Fish Curry)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Hawai.jpg">
+                <div class="layer">
+                    <h3>Hawai Thongba(Peas Curry)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Pumkin.jpg">
+                <div class="layer">
+                    <h3>Mairen Thongba(Pumkin Curry)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="foods-col">
+                <img src="img/Tharoi.jpg">
+                <div class="layer">
+                    <h3>Tharoi Thongba(Snail Curry)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Eromba.jpg">
+                <div class="layer">
+                    <h3>Soibum Eromba(Fermented Bamboo Shoot)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Singu.jpg">
+                <div class="layer">
+                    <h3>Singju(Spicy Veg Salad)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="foods-col">
+                <img src="img/Bora.jpg">
+                <div class="layer">
+                    <h3>Bora(Veg Fried)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Chamfut.jpg">
+                <div class="layer">
+                    <h3>Chamfut(Boiled Veg)</h3>
+                </div>
+            </div>
+            <div class="foods-col">
+                <img src="img/Paknam.jpg">
+                <div class="layer">
+                    <h3>Paknam(C-Veg Steam)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--JavaScript For Menu Toggle-->
+    <script>
+        var navLink = document.getElementById("navLinks");
+        function hideMenu()
+        {
+            navLink.style.right = "-200px";
+        }
+        function showMenu()
+        {
+            navLink.style.right = "0px";
+        }
+    </script>
+</body>
+</html>
